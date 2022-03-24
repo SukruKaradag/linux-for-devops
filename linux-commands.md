@@ -15,9 +15,12 @@
 
 ## cat command
 Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
-> cat -b   >> Seçilen belgenin **boş olmayan**  satırlarını numaralandırır.
 
-> cat -n   >> Seçilen belgenenin tüm satırlarını numaralandırır.
+>cat "test1.txt"  "test2.txt"    >> test1.txt ve test2.txt belgelerini birleştirerek çıktı verir.
+
+> cat -b                         >> Seçilen belgenin **boş olmayan**  satırlarını numaralandırır.
+
+> cat -n                         >> Seçilen belgenenin tüm satırlarını numaralandırır.
 
 <BURAYA İLGİLİ RESİMLER!!!>
 
