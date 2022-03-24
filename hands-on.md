@@ -1,10 +1,16 @@
 ## Groups and Users
 > sudo useradd "username"                 >> Yeni bir User ekler.
+
 > sudo passwd "username"                  >> Yeni User'ın şifresini oluşturur.
+
 > sudo userdel "username"                 >> Belirtilen User'ı siler.
+
 > sudo groupadd "groupname"               >> Yeni bir grup oluşturur.
+
 > sudo groupdel "groupname"               >> Belirtilen grubu siler.
+
 > sudo usermod -g "groupname" "username"  >> Belirtilen gruba belirtilen User'ı ekler.
+
 <BURAYA İLGİLİ RESİMLER!!!>
 
 ## cat command
