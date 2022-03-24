@@ -101,4 +101,56 @@ mtr komutu **ping** ve **traceroute** komutlarını kombine eder. Gerçek zamanl
 
 > mtr google.com             >> Gerçek zamanlı olarak listeler
 
->mtr -n --report google.com  >> <!-- Hedefe sadece 10 paket atarak sonucu rapor halinde listeler. -->
+> mtr -n --report google.com  >> Hedefe sadece 10 paket atarak sonucu rapor halinde listeler.
+
+## nslookup ve dig commandans
+Belirtilen adresin **NS** ve **SOA**  lerini sıralar.
+
+> nslookup google.com
+
+> dig google.com
+
+## tcpdump command
+Makinada bulunan tüm network interface'lerin durumunu sorgular ve interfacelerden gönderilen paketleri yakalar.
+
+> sudo  tcpdump --list-interfaces
+
+>sudo tcpdump -i eth0  >> Belirtilen arayüzün paket iletimini yakalar.
+
+## wget command
+wget komutu ile belirtilen web sayfası indirilir.
+
+> wget https://github.com/SukruKaradag/linux-for-devops/blob/main/hands-on.md
+
+## find command
+Belirtilen dizi veya dosyayı bulur.
+
+> find "aranmak istenen dizin" "dosya"
+
+## free, df ve du commands
+diskin kullanım durumunu listeler.
+
+> free
+
+- -b, ya da –-bytes: bytes olarak listeler.
+- -k, ya da –-kilo : kilobytes olarak listeler (default).
+- -m, ya da –-mega : megabytes olarak listeler.
+- -g, ya da –-giga : gigabytes olarak listeler.
+
+> du -h -d 1 /var/
+
+> df -h
+
+## tr command
+tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler(|) kullanılarak daha karmaşık scriptler yazılarbilir.
+
+> cat deneme.txt | tr "e" "a"           >> deneme.txt içindeki tüm **e**ler **a** olur.
+
+> cat deneme.txt | tr "[a-z]" "[A-Z]"   >> deneme.txt içindeki tüm **küçük** harfler  **BÜYÜK** olur.
+
+> cat deneme.txt | tr -d "a"            >> deneme.txt içindeki tüm **a""lar silinir.
+
+
+## htop, ps ve kill commands
+
+
