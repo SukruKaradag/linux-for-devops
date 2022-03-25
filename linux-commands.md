@@ -152,11 +152,11 @@ diskin kullanım durumunu listeler.
 
 > du -h -d 1 /var/
 
-![du command screenshot](/assest/ducommand.PNG "du h d 1 /home/")
+![du command screenshot](/assest/ducommand.PNG)
 
 > df -h
 
-![df command screenshot](/assest/dfcommand.PNG "df -h")
+![df command screenshot](/assest/dfcommand.PNG)
 
 ## tr command
 tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler | kullanılarak daha karmaşık scriptler yazılabilir.
