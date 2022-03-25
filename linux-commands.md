@@ -3,7 +3,7 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 
 > lsof -u "kullanıcı adı" > Belirtilen user tarafından açık olan dosyaları listeler.
 
-![lsof command screenshot](/assets/lsof.PNG "lsof u user")
+![lsof command screenshot](/assets/lsof.png "lsof u user")
 
 ## Groups and Users
 
@@ -35,7 +35,7 @@ Bu komut iki dosya arasındaki farkları listeler.
 
 > diff "test-1.txt" "test-2.txt"
 
-![diff command screenshot](/assets/diff.PNG "diff test-1.txt, test-2.txt")
+![diff command screenshot](/assets/diff.png "diff test-1.txt, test-2.txt")
 
 ## cat command
 Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
