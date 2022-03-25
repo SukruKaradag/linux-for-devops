@@ -3,7 +3,7 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 
 > lsof -u "kullanıcı adı" > Belirtilen user tarafından açık olan dosyaları listeler.
 
-![lsof command screenshot](/assets/lsof.png "lsof -u \"user")
+![lsof command screenshot](/assets/lsof.png "lsof -u "user")
 
 ## Groups and Users
 
@@ -14,7 +14,7 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 > sudo userdel "username"                 >> Belirtilen User'ı siler.
 
 > sudo groupadd "groupname"               >> Yeni bir grup oluşturur.
-
+git 
 > sudo groupdel "groupname"               >> Belirtilen grubu siler.
 
 > sudo usermod -g "groupname" "username"  >> Belirtilen gruba belirtilen User'ı ekler.
