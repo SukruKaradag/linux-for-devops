@@ -152,11 +152,11 @@ diskin kullanım durumunu listeler.
 
 > du -h -d 1 /home/
 
-![du command screenshot](/assests/du.PNG "du -h -d 1 /home/")
+![du command screenshot](/assets/du.PNG "du -h -d 1 /home/")
 
 > df -h
 
-![df command screenshot](/assests/df.PNG "df -h")
+![df command screenshot](/assets/df.PNG "df -h")
 
 ## tr command
 tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler | kullanılarak daha karmaşık scriptler yazılabilir.
