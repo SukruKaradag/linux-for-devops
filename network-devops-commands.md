@@ -30,13 +30,6 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 
 ![id command screenshot](/assets/id.PNG "id, id -g, id -G, ve id -u ")
 
-## diff command
-Bu komut iki dosya arasındaki farkları listeler.
-
-> diff "test-1.txt" "test-2.txt"
-
-![diff command screenshot](/assets/diff.png "diff test-1.txt test-2.txt")
-
 ## cat command
 Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
 
@@ -47,6 +40,13 @@ Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
 > cat -n                         >> Seçilen belgenin ***boş olmayan***  satırlarını da numaralandırır.
 
 ![cat command screenshot](/assets/cat.PNG "cat, cat -b ve cat -n")
+
+## diff command
+Bu komut iki dosya arasındaki farkları listeler.
+
+> diff "test-1.txt" "test-2.txt"
+
+![diff command screenshot](/assets/diff.png "diff test-1.txt test-2.txt")
 
 ## dd command
 Bu komut belirtilen belge ve ya dizini belirtilen hedefe kopyalar. *cp*den farklı olarak ***byte-to-byte*** kopyalama işlemi yapar. Örneğin bir diskin başka bir diske kopyalamasını yaparken diskin tam bir replikasını oluşturur.(AWS ***snapshot*** gibi) Backup almakta kullanışlıdır.
