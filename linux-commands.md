@@ -152,7 +152,7 @@ diskin kullanım durumunu listeler.
 
 > du -h -d 1 /home/
 
-![du command screenshot](/assest/du.PNG "du -h -d 1 /home/")
+![du command screenshot](/assests/du.PNG "du -h -d 1 /home/")
 
 > df -h
 
