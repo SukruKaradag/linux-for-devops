@@ -156,7 +156,7 @@ diskin kullanım durumunu listeler.
 
 > df -h
 
-![df command screenshot](/assest/df.PNG " df -h")
+![df command screenshot](/assests/df.PNG "df -h")
 
 ## tr command
 tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler | kullanılarak daha karmaşık scriptler yazılabilir.
