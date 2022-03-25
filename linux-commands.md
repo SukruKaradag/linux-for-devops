@@ -3,7 +3,7 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 
 > lsof -u "kullanıcı adı" > Belirtilen user tarafından açık olan dosyaları listeler.
 
-![lsof command screenshot](/assets/lsof.png "lsof -u user")
+![lsof command screenshot](/assets/lsof.PNG "lsof -u user")
 
 ## Groups and Users
 
@@ -28,14 +28,14 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 
 > id -u >> Mevcut user id.
 
-![id command screenshot](/assets/id.png "id, id -g, id -G, ve id -u ")
+![id command screenshot](/assets/id.PNG "id, id -g, id -G, ve id -u ")
 
 ## diff command
 Bu komut iki dosya arasındaki farkları listeler.
 
 > diff "test-1.txt" "test-2.txt"
 
-![diff command screenshot](/assets/diff.png "diff test-1.txt test-2.txt")
+![diff command screenshot](/assets/diff.PNG "diff test-1.txt test-2.txt")
 
 ## cat command
 Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
@@ -46,7 +46,7 @@ Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
 
 > cat -n                         >> Seçilen belgenin ***boş olmayan***  satırlarını da numaralandırır.
 
-![cat command screenshot](/assets/cat.png "cat, cat -b ve cat -n")
+![cat command screenshot](/assets/cat.PNG "cat, cat -b ve cat -n")
 
 ## dd command
 Bu komut belirtilen belge ve ya dizini belirtilen hedefe kopyalar. *cp*den farklı olarak ***byte-to-byte*** kopyalama işlemi yapar. Örneğin bir diskin başka bir diske kopyalamasını yaparken diskin tam bir replikasını oluşturur.(AWS ***snapshot*** gibi) Backup almakta kullanışlıdır.
@@ -64,25 +64,25 @@ Route table bilgilerini listeler.
 
 > route
 
-![route command screenshot](/assets/route.png "route")
+![route command screenshot](/assets/route.PNG "route")
 
 ## traceroute command
 ***ICMP*** protokolünü kullanarak belirtilen hedefe gönderilen paketin kaç atlamada hedefe ulaştığını gösterir.
 
 >traceroute google.com
 
-![traceroute command screenshot](/assets/traceroute.png "traceroute google.com")
+![traceroute command screenshot](/assets/traceroute.PNG "traceroute google.com")
 
 ## mtr command
 mtr komutu ***ping*** ve ***traceroute*** komutlarını kombine eder. Gerçek zamanlı olarak gönderilen pakette gerçekleşen veri kayıplarını ve geçikme sürelerini detaylı olarak listeler.
 
 > mtr google.com             >> Gerçek zamanlı olarak listeler
 
-![mtr command screenshot](/assets/mtr.png "mtr google.com")
+![mtr command screenshot](/assets/mtr.PNG "mtr google.com")
 
 > mtr -n --report google.com  >> Hedefe sadece 10 paket atarak sonucu rapor halinde listeler.
 
-![mtr -n --report command screenshot](/assets/mtr-2.png "mtr -n --report google.com")
+![mtr -n --report command screenshot](/assets/mtr-2.PNG "mtr -n --report google.com")
 
 - -n parametresi DNS çözümlemesini engeller.
 
@@ -91,12 +91,12 @@ Belirtilen adresin ***NS*** ve ***SOA***  lerini sıralar.
 
 > nslookup google.com
 
-![nslookup command screenshot](/assets/nslookup.png "nslookup sukrukaradag.com")
+![nslookup command screenshot](/assets/nslookup.PNG "nslookup sukrukaradag.com")
 
 
 > dig google.com
 
-![dig command screenshot](/assets/dig.png "dig sukrukaradag.com")
+![dig command screenshot](/assets/dig.PNG "dig sukrukaradag.com")
 
 ## tcpdump command
 Makinada bulunan tüm ***network interface***'lerin durumunu sorgular ve ***interface***lerden gönderilen paketleri yakalar.
@@ -105,7 +105,7 @@ Makinada bulunan tüm ***network interface***'lerin durumunu sorgular ve ***inte
 
 > sudo tcpdump --list-interfaces >> Tüm arayüzleri listeler.
 
-![tcpdump --list-interfaces command screenshot](/assets/tcpdump-list.png "sudo tcpdump --list-interfaces")
+![tcpdump --list-interfaces command screenshot](/assets/tcpdump-list.PNG "sudo tcpdump --list-interfaces")
 
 > sudo tcpdump                  >> Tüm arayüzlerin paket iletimini dinler
 
@@ -113,14 +113,14 @@ Makinada bulunan tüm ***network interface***'lerin durumunu sorgular ve ***inte
 
 > sudo tcpdump -i eth0 -c 10    >> Paket dinleme işlemini 10 ile sınırlar.
 
-![tcpdump command screenshot](/assets/tcpdump-list.png "sudo tcpdump -i eth0 -c 10")
+![tcpdump command screenshot](/assets/tcpdump-list.PNG "sudo tcpdump -i eth0 -c 10")
 
 ## sudo !! command
 Bu komut, komut satırında kendinden önce girilen komutu ***root*** izni ile tekrarlar
 
 >sudo !!
 
-![sudo !! command screenshot](/assets/sudo-!!.png "sudo !!")
+![sudo !! command screenshot](/assets/sudo-!!.PNG "sudo !!")
 
 
 ## wget command
@@ -128,7 +128,7 @@ Bu komut, komut satırında kendinden önce girilen komutu ***root*** izni ile t
 
 > wget https://github.com/SukruKaradag/linux-for-devops/blob/main/linux-commands.md
 
-![wget command screenshot](/assets/wget.png "wget https://github.com/SukruKaradag/linux-for-devops/blob/main/linux-commands.md")
+![wget command screenshot](/assets/wget.PNG "wget https://github.com/SukruKaradag/linux-for-devops/blob/main/linux-commands.md")
 
 
 ## find command
@@ -136,14 +136,14 @@ Belirtilen dizin ve ya dosyayı bulur.
 
 > find "aranmak istenen dizin" "dosya"
 
-![find command screenshot](/assets/find.png "find /home linux-commands.md")
+![find command screenshot](/assets/find.PNG "find /home linux-commands.md")
 
 ## free, df ve du commands
 diskin kullanım durumunu listeler.
 
 > free
 
-![free command screenshot](/assets/free.png "free")
+![free command screenshot](/assets/free.PNG "free")
 
 - -b, ya da –-bytes: ***bytes*** olarak listeler.
 - -k, ya da –-kilo: ***kilobytes*** olarak listeler (default).
@@ -152,11 +152,11 @@ diskin kullanım durumunu listeler.
 
 > du -h -d 1 /var/
 
-![du command screenshot](/assest/du.png "du -h -d 1 /home/")
+![du command screenshot](/assest/du.PNG "du -h -d 1 /home/")
 
 > df -h
 
-![df command screenshot](/assest/df.png "df -h")
+![df command screenshot](/assest/df.PNG "df -h")
 
 ## tr command
 tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler | kullanılarak daha karmaşık scriptler yazılabilir.
