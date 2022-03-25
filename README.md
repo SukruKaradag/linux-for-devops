@@ -15,3 +15,4 @@ Linux Cheatsheet for DevOps.
 - https://github.com/SukruKaradag/linux-for-devops/blob/main/pdfs/linux_ubuntu_guide.pdf
 
 - https://github.com/SukruKaradag/linux-for-devops/blob/main/pdfs/Linux_Command-19.01.pdf
+#linux komutlarini anlatan guzel bir calisma olmus sukru hocama tesekkur ecdiyorum sabah biraz inceledim
