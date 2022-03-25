@@ -113,7 +113,7 @@ Makinada bulunan tüm ***network interface***'lerin durumunu sorgular ve ***inte
 
 > sudo tcpdump -i eth0 -c 10    >> Paket dinleme işlemini 10 ile sınırlar.
 
-![tcpdump command screenshot](/assets/tcpdump-list.PNG "sudo tcpdump -i eth0 -c 10")
+![tcpdump command screenshot](/assets/tcpdump.PNG "sudo tcpdump -i eth0 -c 10")
 
 ## sudo !! command
 Bu komut, komut satırında kendinden önce girilen komutu ***root*** izni ile tekrarlar
@@ -163,15 +163,15 @@ tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipele
 
 > cat deneme.txt | tr "e" "a"           >> deneme.txt içindeki tüm ***e***'ler ***a*** olur.
 
-![tr command screenshot](/assets/tr-1.PNG "cat deneme.txt | tr "e" "a"")
+![tr command screenshot](/assets/tr-1.PNG "cat deneme.txt | tr e a")
 
 > cat deneme.txt | tr "[a-z]" "[A-Z]"   >> deneme.txt içindeki tüm ***küçük*** harfler  ***BÜYÜK*** olur.
 
-![tr command screenshot](/assets/tr-2.PNG "cat deneme.txt | tr "[a-z] "[A-Z]"")
+![tr command screenshot](/assets/tr-2.PNG "cat deneme.txt | tr [a-z] [A-Z]")
 
 > cat deneme.txt | tr -d "a"            >> deneme.txt içindeki tüm ***a***'lar silinir.
 
-![tr command screenshot](/assets/tr-3.PNG "cat deneme.txt | tr -d "i"")
+![tr command screenshot](/assets/tr-3.PNG "cat deneme.txt | tr -d i")
 
 
 ## htop, ps ve kill commands
