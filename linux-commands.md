@@ -3,7 +3,7 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 
 > lsof -u "kullanıcı adı" > Belirtilen user tarafından açık olan dosyaları listeler.
 
-![lsof command screenshot](/assets/lsof.png "lsof -u "user")
+![lsof command screenshot](/assets/lsof.png "lsof -u user")
 
 ## Groups and Users
 
