@@ -150,13 +150,13 @@ diskin kullanım durumunu listeler.
 - -m, ya da –-mega: ***megabytes*** olarak listeler.
 - -g, ya da –-giga: ***gigabytes*** olarak listeler.
 
-> du -h -d 1 /var/
+> du -h -d 1 /home/
 
-![du command screenshot](/assest/ducommand.PNG)
+![du command screenshot](/assest/du.PNG "du -h -d 1 /home/")
 
 > df -h
 
-![df command screenshot](/assest/dfcommand.PNG)
+![df command screenshot](/assest/df.PNG " df -h")
 
 ## tr command
 tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler | kullanılarak daha karmaşık scriptler yazılabilir.
