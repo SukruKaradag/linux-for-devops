@@ -229,7 +229,9 @@ Bu komut ile hem alfabetik hem de numerik sıralama yapılır. Dosyaları, dosya
 ## chown command
 Dosyaların sahipliğini değiştirir.
 
-> chown "kullanıcı_veya_grup_adı" "dosya_adı"
+> sudo chown "kullanıcı_veya_grup_adı" "dosya_adı"
+
+![chown command screenshot](/assets/chown.PNG "sudo chown karadag  sort-example.txt")
 
 ## chmod command
 Bu komut, dosya ve dizinlerin erişim izinlerini değiştirmek için kullanılır.
