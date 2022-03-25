@@ -163,9 +163,15 @@ tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipele
 
 > cat deneme.txt | tr "e" "a"           >> deneme.txt içindeki tüm ***e***'ler ***a*** olur.
 
+![tr command screenshot](/assets/tr-1.PNG "cat deneme.txt | tr "e" "a"")
+
 > cat deneme.txt | tr "[a-z]" "[A-Z]"   >> deneme.txt içindeki tüm ***küçük*** harfler  ***BÜYÜK*** olur.
 
+![tr command screenshot](/assets/tr-2.PNG "cat deneme.txt | tr "[a-z] "[A-Z]"")
+
 > cat deneme.txt | tr -d "a"            >> deneme.txt içindeki tüm ***a***'lar silinir.
+
+![tr command screenshot](/assets/tr-3.PNG "cat deneme.txt | tr -d "i"")
 
 
 ## htop, ps ve kill commands
@@ -173,13 +179,15 @@ tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipele
 
 > htop
 
-> ps 
+![htop command screenshot](/assets/htop.PNG "htop")
+
+> ps aux
+
+![ps command screenshot](/assets/ps.PNG "ps")
 
 - -a = Tüm kullanıcıların işlemlerini gösterir.
 - -u = İşlemin sahibini gösterir.
 - -x = Terminale bağlı olmayan işlemleri gösterir.
-
-> ps aux
 
 > kill "ID"
 
@@ -187,7 +195,11 @@ tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipele
 
 > head "dosya.txt" >> Belgenin ***ilk on satır***ını çıkarır.
 
+![head command screenshot](/assets/head.PNG "head sayılar.txt")
+
 > tail "dosya.txt" >> Belgenin ***son on satır***ını çıkarır.
+
+![tail command screenshot](/assets/tail.PNG "tail.txt")
 
 ## man command
 ***man*** komutu diğer tüm komutların detaylı kullanımını açıklar.
@@ -203,7 +215,7 @@ Bu komut ile hem alfabetik hem de numerik sıralama yapılır. Dosyaları, dosya
 
 > sort -n  >> Çıktıyı ***numerik*** olarak sıralar.
 
-<BURAYA İLGİLİ RESİMLER!!!>
+
 
 ## chown command
 Dosyaların sahipliğini değiştirir.
