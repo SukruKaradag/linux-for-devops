@@ -204,17 +204,26 @@ tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipele
 ## man command
 ***man*** komutu diğer tüm komutların detaylı kullanımını açıklar.
 
-> man ls 
+> man whoami
+
+![man command screenshot](/assets/man.PNG "man whoami")
 
 ## sort command
 Bu komut ile hem alfabetik hem de numerik sıralama yapılır. Dosyaları, dosya içeriklerini ve dizinleri sıralar. Sıralamayı ***case sensitive*** olarak yapar.
 
+![sort command screenshot](/assets/sort.PNG "sort sort-example.txt")
+
 > sort -r  >> Çıktıyı ***ters*** olarak sıralar.
+
+![sort -r command screenshot](/assets/sortr.PNG "sort -r sort-example.txt")
 
 > sort -f  >> Çıktıyı **case *insensitive*** olarak sıralar.  
 
+![sort -f command screenshot](/assets/sortf.PNG "sort -f sort-example.txt")
+
 > sort -n  >> Çıktıyı ***numerik*** olarak sıralar.
 
+![sort -n command screenshot](/assets/sortn.PNG "sort -n sort-example.txt")
 
 
 ## chown command
