@@ -14,13 +14,10 @@ lsof(***List Of Open File***) sistemdeki tüm çalışan dosyaları listeler.
 > sudo userdel "username"                 >> Belirtilen User'ı siler.
 
 > sudo groupadd "groupname"               >> Yeni bir grup oluşturur.
-git 
+ 
 > sudo groupdel "groupname"               >> Belirtilen grubu siler.
 
 > sudo usermod -g "groupname" "username"  >> Belirtilen gruba belirtilen User'ı ekler.
-
-<BURAYA İLGİLİ RESİMLER!!!>
-
 
 ## id command 
 ***User*** ve ***Grup*** numarik id'lerini listeler
@@ -31,21 +28,25 @@ git
 
 > id -u >> Mevcut user id.
 
+![id command screenshot](/assets/id.png "id, id -g, id -G, ve id -u ")
+
 ## diff command
 Bu komut iki dosya arasındaki farkları listeler.
 
 > diff "test-1.txt" "test-2.txt"
 
+![diff command screenshot](/assets/diff.png "diff test-1.txt test-2.txt")
+
 ## cat command
 Bu komut ile  belgeleri okuyabilir, değiştirirebilir ve birleştirebiliriz.
 
-> cat "test1.txt"  "test2.txt"    >> test1.txt ve test2.txt belgelerini birleştirerek çıktı verir.
+> cat "test-1.txt"  "test-2.txt"    >> test-1.txt ve test-2.txt belgelerini birleştirerek çıktısını verir.
 
-> cat -b                         >> Seçilen belgenin ***boş olmayan***  satırlarını da numaralandırır.
+> cat -b                         >> Seçilen belgenenin tüm satırlarını numaralandırır.
 
-> cat -n                         >> Seçilen belgenenin tüm satırlarını numaralandırır.
+> cat -n                         >> Seçilen belgenin ***boş olmayan***  satırlarını da numaralandırır.
 
-<BURAYA İLGİLİ RESİMLER!!!>
+![cat command screenshot](/assets/cat.png "cat, cat -b ve cat -n")
 
 ## dd command
 Bu komut belirtilen belge ve ya dizini belirtilen hedefe kopyalar. *cp*den farklı olarak ***byte-to-byte*** kopyalama işlemi yapar. Örneğin bir diskin başka bir diske kopyalamasını yaparken diskin tam bir replikasını oluşturur.(AWS ***snapshot*** gibi) Backup almakta kullanışlıdır.
@@ -63,54 +64,86 @@ Route table bilgilerini listeler.
 
 > route
 
+![route command screenshot](/assets/route.png "route")
+
 ## traceroute command
 ***ICMP*** protokolünü kullanarak belirtilen hedefe gönderilen paketin kaç atlamada hedefe ulaştığını gösterir.
 
 >traceroute google.com
+
+![traceroute command screenshot](/assets/traceroute.png "traceroute google.com")
 
 ## mtr command
 mtr komutu ***ping*** ve ***traceroute*** komutlarını kombine eder. Gerçek zamanlı olarak gönderilen pakette gerçekleşen veri kayıplarını ve geçikme sürelerini detaylı olarak listeler.
 
 > mtr google.com             >> Gerçek zamanlı olarak listeler
 
+![mtr command screenshot](/assets/mtr.png "mtr google.com")
+
 > mtr -n --report google.com  >> Hedefe sadece 10 paket atarak sonucu rapor halinde listeler.
+
+![mtr -n --report command screenshot](/assets/mtr-2.png "mtr -n --report google.com")
+
+- -n parametresi DNS çözümlemesini engeller.
 
 ## nslookup ve dig commands
 Belirtilen adresin ***NS*** ve ***SOA***  lerini sıralar.
 
 > nslookup google.com
 
+![nslookup command screenshot](/assets/nslookup.png "nslookup sukrukaradag.com")
+
+
 > dig google.com
+
+![dig command screenshot](/assets/dig.png "dig sukrukaradag.com")
 
 ## tcpdump command
 Makinada bulunan tüm ***network interface***'lerin durumunu sorgular ve ***interface***lerden gönderilen paketleri yakalar.
 
-> sudo  tcpdump --list-interfaces
 
-> sudo tcpdump -i eth0        >> Belirtilen arayüzün paket iletimini dinler.
 
-> sudo tcpdump -i eth0 -c 10  >> Paket dinleme işlemini 10 ile sınırlar.
+> sudo tcpdump --list-interfaces >> Tüm arayüzleri listeler.
+
+![tcpdump --list-interfaces command screenshot](/assets/tcpdump-list.png "sudo tcpdump --list-interfaces")
+
+> sudo tcpdump                  >> Tüm arayüzlerin paket iletimini dinler
+
+> sudo tcpdump -i eth0          >> Belirtilen arayüzün paket iletimini dinler.
+
+> sudo tcpdump -i eth0 -c 10    >> Paket dinleme işlemini 10 ile sınırlar.
+
+![tcpdump command screenshot](/assets/tcpdump-list.png "sudo tcpdump -i eth0 -c 10")
 
 ## sudo !! command
 Bu komut, komut satırında kendinden önce girilen komutu ***root*** izni ile tekrarlar
 
 >sudo !!
 
+![sudo !! command screenshot](/assets/sudo-!!.png "sudo !!")
+
 
 ## wget command
 ***wget*** komutu ile belirtilen web sayfası indirilir.
 
-> wget https://github.com/SukruKaradag/linux-for-devops/blob/main/hands-on.md
+> wget https://github.com/SukruKaradag/linux-for-devops/blob/main/linux-commands.md
+
+![wget command screenshot](/assets/wget.png "wget https://github.com/SukruKaradag/linux-for-devops/blob/main/linux-commands.md")
+
 
 ## find command
 Belirtilen dizin ve ya dosyayı bulur.
 
 > find "aranmak istenen dizin" "dosya"
 
+![find command screenshot](/assets/find.png "find /home linux-commands.md")
+
 ## free, df ve du commands
 diskin kullanım durumunu listeler.
 
 > free
+
+![free command screenshot](/assets/free.png "free")
 
 - -b, ya da –-bytes: ***bytes*** olarak listeler.
 - -k, ya da –-kilo: ***kilobytes*** olarak listeler (default).
@@ -119,7 +152,11 @@ diskin kullanım durumunu listeler.
 
 > du -h -d 1 /var/
 
+![du command screenshot](/assest/du.png "du -h -d 1 /home/")
+
 > df -h
+
+![df command screenshot](/assest/df.png "df -h")
 
 ## tr command
 tr komutu ile belirtilen dosyanın içinde manipülasyonlar yapılabilir. Pipeler | kullanılarak daha karmaşık scriptler yazılabilir.
