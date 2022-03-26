@@ -87,7 +87,7 @@ mtr komutu ***ping*** ve ***traceroute*** komutlarını kombine eder. Gerçek za
 - -n parametresi DNS çözümlemesini engeller.
 
 ## nslookup ve dig commands
-Belirtilen adresin ***NS*** ve ***SOA***  lerini sıralar.
+Belirtilen adresin ***NS*** ve ***SOA*** kayıtlarını listeler.
 
 > nslookup google.com
 
@@ -234,8 +234,10 @@ Dosyaların sahipliğini değiştirir.
 ![chown command screenshot](/assets/chown.PNG "sudo chown karadag  sort-example.txt")
 
 ## chmod command
-Bu komut, dosya ve dizinlerin erişim izinlerini değiştirmek için kullanılır.
+Bu komut, dosya ve dizinlerin erişim izinlerini değiştirmek için kullanılır. Her bir basamak user, group ve others kullanıcılılarını temsil eder.
 
+> chmod 754 "dosya.txt"
+>
 - **4 – read(**r**) permission**
 
 - **2 – write(**w**) permission**
@@ -244,4 +246,3 @@ Bu komut, dosya ve dizinlerin erişim izinlerini değiştirmek için kullanılı
 
 - **0 – no permission**
 
-> chmod "user,group,others" dosya.txt
