@@ -236,12 +236,12 @@ Dosyaların sahipliğini değiştirir.
 ## chmod command
 Bu komut, dosya ve dizinlerin erişim izinlerini değiştirmek için kullanılır.
 
-**4 – read(**r**) permission**
+- **4 – read(**r**) permission**
 
-**2 – write(**w**) permission**
+- **2 – write(**w**) permission**
 
-**1 – execute(**x**) permission**
+- **1 – execute(**x**) permission**
 
-**0 – no permission**
+- **0 – no permission**
 
 > chmod "user,group,others" dosya.txt
