@@ -1,7 +1,7 @@
 # linux-for-devops
 Linux Cheatsheet for DevOps.
 
-# [network-devops-commands.md](./network-devops-commands.md)'yi güncel tutmaya çalışacağım.
+# [network-devops-commands.md](./network-devops-commands.md)'ı güncel tutmaya çalışacağım.
 
 ## resources:
 
