@@ -49,7 +49,7 @@ Bu komut iki dosya arasındaki farkları listeler.
 ![diff command screenshot](/assets/diff.png "diff test-1.txt test-2.txt")
 
 ## dd command
-Bu komut belirtilen belge ve ya dizini belirtilen hedefe kopyalar. *cp*den farklı olarak ***byte-to-byte*** kopyalama işlemi yapar. Örneğin bir diskin başka bir diske kopyalamasını yaparken diskin tam bir replikasını oluşturur.(AWS ***snapshot*** gibi) Backup almakta kullanışlıdır.
+Bu komut belirtilen belge ve ya dizini belirtilen hedefe kopyalar. *cp*den farklı olarak ***byte-to-byte*** kopyalama işlemi yapar. Örneğin bir diskin başka bir diske kopyalamasını yaparken diskin tam bir replikasını oluşturur.(AWS ***snapshot*** gibi) Backup almakta kullanışlıdır. !!DUMMY FILES!!
 
 > dd if = /dev/mp1 of = /dev/mp2 >> Mountpoint1 diskini olduğu gibi Mountpoint2 diskine kopyalar
 
@@ -58,6 +58,13 @@ Bu komut belirtilen belge ve ya dizini belirtilen hedefe kopyalar. *cp*den farkl
 Eğer kopyalama işlemindeki  hatalar gözardı edilmek isteniyorsa ***conv=noerror*** parametresi verilir:
 
 > dd conv=noerror if = /dev/mp1 of = /dev/mp2
+
+Sometimes you need to create dummy files with specified size and count:
+
+- bs=output file size
+- count=output files count
+
+> dd if=/dev/urandom of=output-file-name bs=5MB count=1
 
 ## route command
 Route table bilgilerini listeler.
@@ -246,3 +253,18 @@ Bu komut, dosya ve dizinlerin erişim izinlerini değiştirmek için kullanılı
 
 - **0 – no permission**
 
+
+# SONRA DÜZENLENECEK!!!
+
+- hostnamectl set-hostname "verilecek_ad" && bash
+- curl wttr.in/"sehir_adı"
+- curl cheat.sh
+- Kalıcı alias eklemek için:
+```bash
+sudo nano ~/.bash_aliases
+yada 
+sudo nano ~/.bashrc # bu iki dosyadan birine girilir.
+# Son satıra:
+alias "alias_name='command'" # kalıcı olması istenilen komut yazılır ve kaydedilir.
+source ~/.bashrc #değişikliklerin kaydedilmesi için.
+```
