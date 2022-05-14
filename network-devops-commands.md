@@ -268,3 +268,8 @@ sudo nano ~/.bashrc # bu iki dosyadan birine girilir.
 alias "alias_name='command'" # kalıcı olması istenilen komut yazılır ve kaydedilir.
 source ~/.bashrc #değişikliklerin kaydedilmesi için.
 ```
+- ``` > /dev/null 2>&1``` işlemin çıktısını null'a atar.
+- ``` | (pipe)``` ilk komutun çıktısının ikinci komutun girdisine yönlendirir.
+- ``` ;``` satıra birden fazla komut yazmak için.
+- ``` && ``` ilk komut hatasız dönerse ikinci komutu da çalıştırır.
+- ``` || ``` ilk komut hatalı dönerse ikinci komutu da çalıştırır.
