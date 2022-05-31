@@ -273,3 +273,4 @@ source ~/.bashrc #değişikliklerin kaydedilmesi için.
 - ``` ;``` satıra birden fazla komut yazmak için.
 - ``` && ``` ilk komut hatasız dönerse ikinci komutu da çalıştırır.
 - ``` || ``` ilk komut hatalı dönerse ikinci komutu da çalıştırır.
+- watch "docker service ps websrc" # arkaplanda çalışan komutu izler.
